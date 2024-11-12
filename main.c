@@ -495,7 +495,7 @@ int main()
             printf("1"); // Print the first term, which is 1
 
             // Loop to add terms from x^2/2! to the nth term
-            for (int k = 1; k < terms; k++)
+            for (int k = 1; k <= terms; k++)
             {
                 int exponent = 2 * k;
                 double term = sign * pow(input, exponent) / factorial(exponent);
@@ -570,7 +570,7 @@ int main()
             printf("S = 1");
 
             // Calculate and add remaining terms
-            for (int i = 1; i < terms; i++)
+            for (int i = 1; i <= terms; i++)
             {
                 double term = pow(x, i) / i;
                 sum += term;
