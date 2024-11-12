@@ -299,24 +299,24 @@ int main()
             printf("S = ");
             for (int i = 1; i <= 20; i++)
             {
-                // Print opening parenthesis except for first term
-                if (i > 1)
-                    printf(" + (");
-                int term_sum = 0;
+                int termSum = 0;
+
                 for (int j = 1; j <= i; j++)
                 {
-                    term_sum += j;
+                    if (j == 1)
+                        printf("(");
+                    termSum += j;
                     printf("%d", j);
                     if (j < i)
                         printf("+");
-                    term_sum += j;
+                    if (j == i)
+                        printf(")");
                 }
-                // Close parenthesis except for first term
-                if (i > 1)
-                    printf(")\n");
 
-                sum += term_sum;
+                printf(" = %d\n", termSum);
+                sum += termSum;
             }
+
             printf("\nS = %d\n", sum);
             validSeries = true;
             break;
@@ -522,35 +522,28 @@ int main()
         case 18:
         { // S = 1 + ( 1 + 2) + (1+2+3)……..(1+2+3+4…..20)
             int sum = 0;
-
-            // For each term up to n
+            printf("S = ");
             for (int i = 1; i <= 20; i++)
             {
                 int termSum = 0;
-                printf("Term %d: ", i);
 
-                // Calculate and print numbers from 1 to i
                 for (int j = 1; j <= i; j++)
                 {
                     if (j == 1)
-                    {
-                        printf("("); // Opening parenthesis at start of term
-                    }
+                        printf("(");
                     termSum += j;
                     printf("%d", j);
                     if (j < i)
-                    {
                         printf("+");
-                    }
                     if (j == i)
-                    {
-                        printf(")"); // Closing parenthesis at end of term
-                    }
+                        printf(")");
                 }
+
                 printf(" = %d\n", termSum);
                 sum += termSum;
             }
-            printf("\nSum of series = %d\n", sum);
+
+            printf("\nS = %d\n", sum);
             validSeries = true;
             break;
         }
