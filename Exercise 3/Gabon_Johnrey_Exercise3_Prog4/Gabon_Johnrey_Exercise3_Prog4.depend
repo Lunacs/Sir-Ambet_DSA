@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1732956124 source:d:\plv\dsa\exercise 3\gabon_johnrey_exercise3_prog4\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1732953543 source:d:\plv\dsa\exercise 3\gabon_johnrey_exercise3_prog4\file1.c
+	<stdio.h>
+	<stdlib.h>
+
