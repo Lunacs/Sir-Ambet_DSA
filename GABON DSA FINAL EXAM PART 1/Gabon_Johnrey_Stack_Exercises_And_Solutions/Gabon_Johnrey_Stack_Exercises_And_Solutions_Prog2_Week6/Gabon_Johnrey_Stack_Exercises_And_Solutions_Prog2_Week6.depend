@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1733741729 source:d:\plv\dsa\gabon dsa final exam part 1\gabon_johnrey_stack_exercises_and_solutions\gabon_johnrey_stack_exercises_and_solutions_prog2_week6\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
