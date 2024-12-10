@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1733833758 source:d:\plv\dsa\gabon dsa final exam part 1\gabon_johnrey_problem_7\gabon_johnrey_problem7_prog1\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
